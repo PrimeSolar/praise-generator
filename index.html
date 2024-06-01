@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Welcome to the Random Praise</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Random Praise Generator is designed to improve mood and well-being. With just a click, you can receive a random praise, perfect for lifting spirits and fostering a supportive environment." />
+  <link rel="stylesheet" type="text/css" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="styles/style.css" title="Main Stylesheet" />
+</head>
+
+<body>
+
+  <div class="flex-container" id="main">
+
+    <h1>Random Praise</h1>
+
+    <p>Discover good vibrations <span class="nowrap">with our Random Praise Generator! 😊</span><br />
+      Instantly generate uplifting <span class="nowrap">and encouraging messages</span> <span class="nowrap">to brighten your day or share with others 🙌</span><br />
+      Perfect for personal motivation, <span class="nowrap">team building, and spreading kindness 💖</span></p>
+
+    <div class="flex-container" id="input">
+      <span>Enter the name of a person:</span>
+      <input type="text" id="name" name="name" placeholder="Person's Name" />
+    </div>
+
+    <div id="btndiv">
+      <input type="submit" class="btn" value="✨Generate and Copy✨" onclick="refresh()"></input>
+    </div>
+
+    <div id="praise"></div>
+
+    <div class="flex-container" id="contact">
+      <p>Have feedback? Feel free to send me an email at <a href="mailto:hypervisor7@pm.me?Subject=Random%20Praise%20Feedback">hypervisor7@pm.me</a>.<br />Together, let's spread more good vibrations in the world!</p>
+      <div id="footerContainer"></div>
+    </div>
+
+  </div>
+
+  <script src="scripts/generate-and-copy.js"></script>
+  <script src="scripts/footer.js"></script>
+
+</body>
+
+</html>
