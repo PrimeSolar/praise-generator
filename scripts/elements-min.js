@@ -1,0 +1,1 @@
+function footerContainerF(o){null!=o&&(o.innerHTML+='\n<footer>\nCopyright © <a href="https://firstsolar.github.io/web-developer/">Vladislav Kazantsev</a> 2024\n</footer>\n      ')}footerContainer=document.querySelector("#footerContainer"),footerContainerF(footerContainer);
