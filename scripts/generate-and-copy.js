@@ -26,7 +26,6 @@ function generateAndCopy() {
   const thirdPartR = thirdPart[Math.floor(Math.random() * thirdPart.length)];
   const praise = document.getElementById('praise');
   const name = document.getElementById('name');
-  console.log(name.value);
   if (name.value !== '' && name.value !== "null" && name.value !== undefined) {
     praise.innerHTML = firstPartR + ', ' + name.value + '! ' + secondPartR + ' ' + thirdPartR;
   } else {
