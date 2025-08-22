@@ -28,6 +28,13 @@ metaCopyright.content =
   "© " + new Date().getFullYear() + " Vladislav Kazantsev";
 document.querySelector("head").appendChild(metaCopyright);
 
+// Insert <meta name="description" content="The Praise Generator is designed to improve mood and well-being. With just a click, you can receive a random praise, perfect for lifting spirits and fostering a supportive environment." />
+const metaDescription = document.createElement("meta");
+metaDescription.name = "description";
+metaDescription.content =
+  "The Praise Generator is designed to improve mood and well-being. With just a click, you can receive a random praise, perfect for lifting spirits and fostering a supportive environment.";
+document.querySelector("head").appendChild(metaDescription);
+
 // Insert <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 const linkNormalize = document.createElement("link");
 linkNormalize.rel = "stylesheet";
@@ -46,6 +53,22 @@ linkStyle.onload = function () {
   // Show the body after the CSS is loaded
   document.body.style.display = "flex";
 };
+
+// Insert <script src="scripts/generate-and-copy-min.js"></script>
+const generateAndCopyScript = document.createElement("script");
+generateAndCopyScript.src = "scripts/generate-and-copy-min.js";
+document.querySelector("body").appendChild(generateAndCopyScript);
+
+// Insert <script src="scripts/components-min.js"></script>
+const componentsScript = document.createElement("script");
+componentsScript.src = "scripts/components-min.js";
+document.querySelector("body").appendChild(componentsScript);
+
+// Insert <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+const confettiScript = document.createElement("script");
+confettiScript.src =
+  "https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js";
+document.querySelector("body").appendChild(confettiScript);
 
 // Insert <link rel="icon" href="pics/logos/logo.svg">
 const linkImage = document.createElement("link");
