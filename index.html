@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="description" content="Praise Generator is designed to improve mood and well-being. With just a click, you can receive a random praise, perfect for lifting spirits and fostering a supportive environment." />
-</head>
+  <body style="display: none">
+    <div id="main" class="flex-container">
+      <h1>Praise Generator</h1>
 
-<body style="display: none;">
+      <p>
+        Discover good vibrations
+        <span class="nowrap">with our Praise Generator! 😊</span><br />
+        Instantly generate uplifting
+        <span class="nowrap">and encouraging messages</span>
+        <span class="nowrap">to brighten your day or share with others 🙌</span
+        ><br />
+        Perfect for personal motivation,
+        <span class="nowrap">team building, and spreading kindness 💖</span>
+      </p>
 
-  <div class="flex-container" id="main">
+      <div class="flex-container" id="input">
+        <span>Enter the name of a person:</span>
+        <input type="text" id="name" name="name" placeholder="Person's Name" />
+      </div>
 
-    <h1>Praise Generator</h1>
+      <div id="btndiv">
+        <input type="submit" id="btn" value="✨Generate and Copy✨" />
+      </div>
 
-    <p>Discover good vibrations <span class="nowrap">with our Praise Generator! 😊</span><br />
-      Instantly generate uplifting <span class="nowrap">and encouraging messages</span> <span class="nowrap">to brighten your day or share with others 🙌</span><br />
-      Perfect for personal motivation, <span class="nowrap">team building, and spreading kindness 💖</span></p>
+      <div id="praise"></div>
 
-    <div class="flex-container" id="input">
-      <span>Enter the name of a person:</span>
-      <input type="text" id="name" name="name" placeholder="Person's Name" />
+      <div id="print"></div>
+
+      <div id="contact" class="flex-container">
+        <p>Together, let's spread more good vibrations in the world!</p>
+        <div id="footerContainer"></div>
+      </div>
     </div>
 
-    <div id="btndiv">
-      <input type="submit" id="btn" value="✨Generate and Copy✨"></input>
-    </div>
-
-    <div id="praise"></div>
-
-    <div class="flex-container" id="contact">
-      <p>Together, let's spread more good vibrations in the world!</p>
-      <div id="footerContainer"></div>
-    </div>
-
-  </div>
-
-  <script src="scripts/generate-and-copy-min.js"></script>
-  <script src="scripts/elements-min.js"></script>
-  <script src="scripts/meta-tags-min.js"></script>
-
-</body>
-
+    <script src="scripts/meta-tags-min.js"></script>
+  </body>
 </html>
