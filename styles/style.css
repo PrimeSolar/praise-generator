@@ -233,6 +233,28 @@ footer {
   box-shadow: 0 4px 8px #0000004d;
 }
 
+@media (max-width: 950px) and (max-height: 430px) {
+  h1 {
+    padding: 2.5vh 0;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  #contact {
+    padding-top: 1vh;
+  }
+
+  footer {
+    padding-top: 5px;
+  }
+
+  #bmc-button {
+    margin: 0.75rem auto;
+  }
+}
+
 @media screen {
   #bmc-link,
   #bmc-arrow {
