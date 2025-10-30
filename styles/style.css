@@ -1,5 +1,16 @@
 /*
- * Style Sheet
+ * Praise Generator Style Sheet
+ *
+ * Description:
+ * CSS for a centered, full-height layout with a
+ * smooth background gradient, flexible design,
+ * responsive adjustments for various viewports, and print-safe rules.
+ *
+ * Notes:
+ * - Uses flexbox to center content and keep spacing predictable.
+ * - Background is fixed and covers the viewport with vendor prefixes.
+ * - Buttons use rounded corners and subtle shadows.
+ * - Print rules adjust colors.
  *
  * Copyright © Vladislav Kazantsev
  * All rights reserved.
