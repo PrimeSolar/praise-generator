@@ -16,8 +16,12 @@
  * For inquiries about collaboration, usage outside exploratory purposes, or permissions, please contact: hypervisor7@pm.me
  */
 
-// The Print Button
+/** The print button. */
 const print = document.querySelector("#print");
+/**
+ * The script includes detailed comments
+ * to support stakeholders with varying JS knowledge.
+ */
 if (print) {
   print.innerHTML += `
   <button
@@ -30,12 +34,12 @@ if (print) {
 `;
 }
 
-// Footer
-footerContainer = document.querySelector("#footerContainer");
-function footerContainerF(footerContainer) {
-  if (footerContainer != null) {
-    //Create a content of the footer:
-    footerContainer.innerHTML += `
+/** The footer. */
+const FooterContainer = document.querySelector("#FooterContainer");
+function footerContainerF(FooterContainer) {
+  if (FooterContainer !== null) {
+    /** Create a content of the footer. */
+    FooterContainer.innerHTML += `
 <footer>
   <p id="copyright">Copyright © <a href="https://primesolar.github.io/web-developer/" class="link-primary" rel="noopener noreferrer">Vladislav Kazantsev</a> ${new Date().getFullYear()}</p>
   <a type="button" href="https://www.buymeacoffee.com/CocaCola" id="bmc-button" target="_blank" rel="noopener noreferrer" aria-label="Buy me a coffee" role="button">☕ Buy me a coffee</a>
@@ -45,6 +49,6 @@ function footerContainerF(footerContainer) {
       `;
   }
 }
-footerContainerF(footerContainer);
+footerContainerF(FooterContainer);
 
 console.log("components.js is completed");
