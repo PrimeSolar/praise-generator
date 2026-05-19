@@ -20,6 +20,12 @@
  * For inquiries about collaboration, usage outside exploratory purposes, or permissions, please contact: hypervisor7@pm.me
  */
 
+document.querySelector("#name").focus();
+
+/**
+ * The script includes detailed comments
+ * to support stakeholders with varying JS knowledge.
+ */
 const firstPart = [
   "Amazing",
   "Amazing job",
@@ -73,11 +79,11 @@ const firstPart = [
   "Outstanding job",
   "Perfect",
   "Remarkable",
-  "You’re improving",
-  "You’ve improved",
-  "You’ve made progress",
-  "You’ve nailed it",
-  "You’ve outdone yourself",
+  "You're improving",
+  "You've improved",
+  "You've made progress",
+  "You've nailed it",
+  "You've outdone yourself",
   "Sensational",
 ];
 
@@ -88,7 +94,7 @@ const secondPart = [
   "Consistency breeds mastery",
   "Daily practice wins",
   "Do not stop",
-  "Don’t lose the streak",
+  "Don't lose the streak",
   "Every practice counts",
   "Grow a little every day",
   "Keep building skills",
@@ -179,20 +185,20 @@ function generateAndCopy() {
   document.execCommand("copy", false);
   inp.remove();
   confetti({
-    particleCount: 50, // Number of confetti pieces
-    spread: 50, // Spread of the confetti
-    origin: { x: 0.25, y: 0.9 }, // Origin point for the confetti
+    particleCount: 50 /** Number of confetti pieces. */,
+    spread: 50 /** Spread of the confetti. */,
+    origin: { x: 0.25, y: 0.9 } /** Origin point for the confetti. */,
   });
   confetti({
-    particleCount: 50, // Number of confetti pieces
-    spread: 50, // Spread of the confetti
-    origin: { x: 0.75, y: 0.9 }, // Origin point for the confetti
+    particleCount: 50 /** Number of confetti pieces. */,
+    spread: 50 /** Spread of the confetti. */,
+    origin: { x: 0.75, y: 0.9 } /** Origin point for the confetti. */,
   });
 }
 
-window.addEventListener("keypress", function (event) {
+window.addEventListener("keydown", (event) => {
   if (event.key === "Enter") generateAndCopy();
 });
-document.getElementById("btn").addEventListener("click", function () {
-  if (true) generateAndCopy();
+document.getElementById("btn").addEventListener("click", () => {
+  generateAndCopy();
 });
