@@ -23,15 +23,18 @@ const print = document.querySelector("#print");
  * to support stakeholders with varying JS knowledge.
  */
 if (print) {
-  print.innerHTML += `
-  <button
-    type="button"
-    id="print-button"
-    onclick="window.print();"
-  >
-  Print Page
-  </button>
-`;
+  print.insertAdjacentHTML(
+    "beforeend",
+    `
+    <button
+      type="button"
+      id="print-button"
+      onclick="window.print();"
+    >
+    Print Page
+    </button>
+  `
+  );
 }
 
 /** The footer. */
@@ -39,14 +42,17 @@ const FooterContainer = document.querySelector("#FooterContainer");
 function footerContainerF(FooterContainer) {
   if (FooterContainer !== null) {
     /** Create a content of the footer. */
-    FooterContainer.innerHTML += `
+    FooterContainer.insertAdjacentHTML(
+      "beforeend",
+      `
 <footer>
   <p id="copyright">Copyright © <a href="https://primesolar.github.io/web-developer/" class="link-primary" rel="noopener noreferrer">Vladislav Kazantsev</a> ${new Date().getFullYear()}</p>
   <a type="button" href="https://www.buymeacoffee.com/CocaCola" id="bmc-button" target="_blank" rel="noopener noreferrer" aria-label="Buy me a coffee" role="button">☕ Buy me a coffee</a>
   <a href="https://www.buymeacoffee.com/CocaCola" id="bmc-arrow" target="_blank" rel="noopener noreferrer" aria-label="Buy me a coffee" role="button">⬇</a>
   <a href="https://www.buymeacoffee.com/CocaCola" id="bmc-link" target="_blank" rel="noopener noreferrer" aria-label="Buy me a coffee" role="button">coff.ee/CocaCola</a>
 </footer>
-      `;
+      `
+    );
   }
 }
 footerContainerF(FooterContainer);
