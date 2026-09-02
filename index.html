@@ -1,22 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html
+  lang="en"
+  dir="ltr"
+  itemscope
+  itemtype="https://schema.org/WebApplication"
+>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Vladislav Kazantsev" />
+    <meta name="copyright" content="© 2026 Vladislav Kazantsev" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Praise Generator",
+        "description": "The Praise Generator is designed to improve mood and well-being. With just a click, you can receive a random praise, perfect for lifting spirits and fostering a supportive environment."
+      }
+    </script>
+    <title>Praise Generator | Full Stack Developer Vladislav Kazantsev</title>
   </head>
 
   <body style="display: none">
+    <noscript
+      >Enable JavaScript for the full experience in the application.</noscript
+    >
     <div id="main" class="flex-container">
-      <h1>Praise Generator</h1>
+      <h1 itemprop="headline">Praise Generator</h1>
 
       <p>
         Discover good vibrations
-        <span class="nowrap">with our Praise Generator! 😊</span><br />
+        <span class="nowrap"
+          >with our Praise Generator! <span aria-hidden="true">😊</span></span
+        ><br />
         Instantly generate uplifting
         <span class="nowrap">and encouraging messages</span>
-        <span class="nowrap">to brighten your day or share with others 🙌</span
+        <span class="nowrap"
+          >to brighten your day or share with others
+          <span aria-hidden="true">🙌</span></span
         ><br />
         Perfect for personal motivation,
-        <span class="nowrap">team building, and spreading kindness 💖</span>
+        <span class="nowrap"
+          >team building, and spreading kindness
+          <span aria-hidden="true">💖</span></span
+        >
       </p>
 
       <div class="flex-container" id="input">
@@ -38,6 +65,7 @@
       </div>
     </div>
 
-    <script src="scripts/meta-tags-min.js"></script>
+    <script type="text/javascript" src="scripts/meta-tags-min.js"></script>
+    <script type="text/javascript" src="scripts/headings.js"></script>
   </body>
 </html>
