@@ -29,6 +29,7 @@ if (print) {
     <button
       type="button"
       id="print-button"
+      aria-label="Print the current page"
       onclick="window.print();"
     >
     Print Page
@@ -38,11 +39,11 @@ if (print) {
 }
 
 /** The footer. */
-const FooterContainer = document.querySelector("#FooterContainer");
-function footerContainerF(FooterContainer) {
-  if (FooterContainer !== null) {
+const footerContainer = document.querySelector("#footerContainer");
+function footerContainerF(footerContainer) {
+  if (footerContainer) {
     /** Create a content of the footer. */
-    FooterContainer.insertAdjacentHTML(
+    footerContainer.insertAdjacentHTML(
       "beforeend",
       `
 <footer>
@@ -55,6 +56,6 @@ function footerContainerF(FooterContainer) {
     );
   }
 }
-footerContainerF(FooterContainer);
+footerContainerF(footerContainer);
 
 console.log("components.js is completed");
