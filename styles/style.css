@@ -24,8 +24,12 @@
  * For inquiries about collaboration, usage outside exploratory purposes, or permissions, please contact: hypervisor7@pm.me
  */
 
+* {
+  box-sizing: border-box;
+}
+
 html {
-  height: 100%; /* Set the height of the element. */
+  height: 100vh; /* Set the height of the element. */
   scroll-behavior: smooth;
 }
 
@@ -33,12 +37,8 @@ html {
 to support stakeholders with varying CSS knowledge. */
 body {
   margin: 0;
+  height: 100vh; /* Set the height of the element. */
   padding: 0;
-  height: 100%; /* Set the height of the element. */
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: center;
   background-image: -moz-linear-gradient(top left, #0000ff, 60%, #ff00ff);
   background-image: -ms-linear-gradient(top left, #0000ff, 60%, #ff00ff);
   background-image: -o-linear-gradient(top left, #0000ff, 60%, #ff00ff);
@@ -48,12 +48,16 @@ body {
   background-size: cover;
   background-clip: border-box;
   background-attachment: fixed;
-  font-size: 16px;
-  color: #fff;
   font-family: "Open Sans", Arial, Helvetica, system-ui, -apple-system,
     sans-serif;
+  font-size: 16px;
   line-height: 1.25em;
-  box-sizing: border-box;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
 }
 
 .flex-container {
@@ -214,19 +218,19 @@ p {
 }
 
 a {
-  color: white;
-}
-
-#footer-container {
-  padding-top: 5vh;
-}
-
-.footer-container {
-  padding-top: 5vh;
+  color: #ffffff;
 }
 
 footer {
   padding-top: 20px;
+}
+
+#footerContainer {
+  padding-top: 5vh;
+}
+
+.footerContainer {
+  padding-top: 5vh;
 }
 
 #copyright {
@@ -236,7 +240,6 @@ footer {
 #bmc-button {
   display: block; /* Specify the display behavior of the element. */
   width: fit-content; /* Set the width of the element. */
-  height: 1.5rem; /* Set the height of the element. */
   margin: 0.75rem auto 0; /* Set the size for the margin of the element. */
   background-color: #ff843f !important; /* Set the color for the background of the element. */
   color: #ffffff; /* Set the color for the text of the element. */
